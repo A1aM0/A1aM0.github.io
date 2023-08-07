@@ -1,1 +1,0 @@
-# Welcome to A1am0GithubIo!

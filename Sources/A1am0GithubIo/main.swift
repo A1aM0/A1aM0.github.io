@@ -22,4 +22,4 @@ struct A1am0GithubIo: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try A1am0GithubIo().publish(withTheme: .foundation)
+try A1am0GithubIo().publish(using: [.addMarkdownFiles(), .copyResources(), .generateHTML(withTheme: .foundation), .generateSiteMap(), .deploy(using: .gitHub("A1aM0/a1am0.github.io", branch: "gh-pages", useSSH: true))])
